@@ -4,9 +4,11 @@
     flex: auto;
 }
 
+.title .text{
+    font-family: 'Times New Roman', Times, serif;
+}
 
 .title{
-    font-family: "Open Sans", sans-serif;
     margin:auto;
     font-size: 48px;
     padding: 10px;
