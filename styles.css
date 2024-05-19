@@ -36,7 +36,7 @@ input[type="text"]{
 
 button[type="spacer"]{
     width: 15px;
-    height: 15px
+    height: 15px;
     color:white;
     background-color: white;
 }
