@@ -1,26 +1,49 @@
 *{
     /* temporary for seeing box outlines */
     /* outline: 2px solid red; */
-    flex: auto;
-}
-
-.title .text{
     font-family: 'Times New Roman', Times, serif;
+    flex: auto;
+    border: none;
+    margin:auto;
+    text-align: left;
+    text-decoration: none;
+}
+body{
+    background-color: white;
 }
 
-.title{
-    margin:auto;
+h1{
     font-size: 48px;
-    padding: 10px;
-    border: 0px;
+    padding: 10px 10px;
+    background-color: rgb(127,171,158);
+    color:black;
+}
+
+p{
+    font-size: 18px;
+    padding: 10px 10px;
     background-color: white;
     color:black;
 }
 
-.text{
-    font-size: 0px;
-    padding: 0px;
-    border: 0px;
-    margin: 10px;;
-    color:black;
+input[type="text"]{
+    color: black;
+    background-color: rgb(245,245,239);
+    padding: 15px 15px;
+    width: 350px;
+    font-size: 20px;
+}
+
+button[type="spacer"]{
+    width: 15px;
+    height: 15px
+    color:white;
+    background-color: white;
+}
+
+button[type="submit"]{
+    background-color: rgb(251,242,223);
+    color: black;
+    padding: 15px 32px;
+    font-size: 20px;
 }
