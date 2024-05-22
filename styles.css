@@ -1,6 +1,6 @@
 *{
     /* temporary for seeing box outlines */
-    outline: 2px solid red; 
+    /*outline: 2px solid red; */
 
     /* format */
     flex: auto;
@@ -39,13 +39,31 @@ p{
 }
 
 p[type=question]{
+    /* margins */
+    margin-top: 10px;
 
     /* color */
     background-color: rgb(251, 242, 223);
 }
 
-textarea[type="text"]{
+input[type="text"]{
+    /* margins */
+    margin: 0;
 
+    /* color */
+    color: black;
+    background-color: rgb(245,245,239);
+
+    /* dimenions */
+    height: 20px;
+    width: 100%;
+
+    /* font */
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+textarea[type="text"]{
     /* margins */
     margin: 0;
 
@@ -58,8 +76,8 @@ textarea[type="text"]{
     width: 100%;
 
     /* font */
-    padding: 15px 15px;
-    font-size: 20px;
+    padding: 10px 10px;
+    font-size: 18px;
 }
 
 button[type="submit"]{
@@ -78,6 +96,7 @@ button[type="submit"]{
 }
 
 #charCount{
+    /* margins */
     margin-right: 10px;
     float:right;
 }
