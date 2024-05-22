@@ -14,9 +14,10 @@
         <p>Welcome to the Lab's "Problem Bank Website". This website is dedicated to taking problems from the community and solving them with our resources here at the lab. Just enter a problem you have below, so our Team STEM Members can come up with an innovative solution for it!</p>
 
         <!--Input Problem-->
+        <p type="question">Enter Problem Below:</p>
         <form class="input" method="GET">
-            <textarea type="text" id="userInput" placeholder="Enter Problem" wrap="soft"> </textarea>
-            <!--<input type="text" id="userInput" placeholder="Enter Problem">-->
+            <textarea type="text" wrap="soft" maxlength="500" id="textInput" oninput="countCharacters()"> </textarea>
+            <div id="charCount">0 / 500</div>
             <br>
             <button type="submit" onclick="returnText()">Submit</button>
             <script src="javascript.js"></script>

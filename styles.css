@@ -1,11 +1,15 @@
 *{
     /* temporary for seeing box outlines */
     /*outline: 2px solid red; */
-    font-family: 'Times New Roman', Times, serif;
-    text-wrap: wrap;
+
+    /* format */
     flex: auto;
     border: none;
     margin:auto;
+
+    /* text */
+    font-family: 'Times New Roman', Times, serif;
+    text-wrap: wrap;
     text-align: left;
     text-decoration: none;
 }
@@ -14,25 +18,35 @@ body{
 }
 
 h1{
-    font-size: 48px;
-    padding: 10px 10px;
+    /* color */
     background-color: rgb(127,171,158);
     color:black;
+    
+    /* font */
+    font-size: 48px;
+    padding: 10px 10px;
 }
 
 p{
-    font-size: 18px;
-    padding: 10px 10px;
+    /* color */
     background-color: white;
     color:black;
+
+    /* font */
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+p[type=question]{
+
+    /* color */
+    background-color: rgb(251, 242, 223);
 }
 
 textarea[type="text"]{
 
     /* margins */
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 0px;
+    margin: 0;
 
     /* color */
     color: black;
@@ -40,7 +54,7 @@ textarea[type="text"]{
 
     /* dimenions */
     height: 100px;
-    width: 500px;
+    width: 100%;
 
     /* font */
     padding: 15px 15px;
@@ -52,8 +66,16 @@ button[type="submit"]{
     margin-top: 10px;
     margin-left: 10px;
 
-    background-color: rgb(251,242,223);
+    /* color */
+    background-color: rgb(221,186,110);
     color: black;
+
+    /* font */
     padding: 15px 32px;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+#charCount{
+    margin-right: 10px;
+    float:right;
 }
