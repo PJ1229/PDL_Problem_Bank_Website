@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problem Bank Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Problem Bank Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
     <body>
+        <!--Script-->
+        <script src="javascript.js"></script>
+
         <!--Title-->
         <h1>PDL Problem Bank</h1>
 
@@ -16,14 +20,12 @@
         <!--Input Problem-->
         <p type="question">Enter Problem Below:</p>
         <form class="input" method="GET">
-            <textarea type="text" wrap="soft" maxlength="500" id="textInput" oninput="countCharacters()"> </textarea>
+            <textarea type="text" wrap="soft" maxlength="500" id="userInput" oninput="countCharacters()"> </textarea>
             <div id="charCount">0 / 500</div>
             <br>
-            <button type="submit" onclick="returnText()">Submit</button>
-            <script src="javascript.js"></script>
         </form>
 
+        <!--Submit Problem-->
+        <button type="submit" onclick="returnText()">Submit</button>
     </body>
-
-
 </html>
