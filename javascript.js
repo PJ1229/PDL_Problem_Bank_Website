@@ -9,5 +9,5 @@ function returnText()
 function countCharacters() {
     var text = document.getElementById("userInput").value;
     var count = text.length;
-    document.getElementById("charCount").innerText = count + " / 500";
+    document.getElementById("charCount").innerText = count + " / 1000";
 }
