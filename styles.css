@@ -40,7 +40,7 @@ p{
 
 p[type=question]{
     /* margins */
-    margin-top: 10px;
+    margin-top: 20px;
 
     /* color */
     background-color: rgb(251, 242, 223);
@@ -59,7 +59,9 @@ input[type="text"]{
     width: 100%;
 
     /* font */
-    padding: 10px 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
     font-size: 18px;
 }
 
