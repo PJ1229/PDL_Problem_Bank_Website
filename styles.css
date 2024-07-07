@@ -1,11 +1,9 @@
-*{
-    /* temporary for seeing box outlines */
-    /*outline: 2px solid red; */
-
+/* Global Styles */
+* {
     /* format */
     flex: auto;
     border: none;
-    margin:auto;
+    margin: auto;
 
     /* text */
     font-family: 'Times New Roman', Times, serif;
@@ -14,112 +12,85 @@
     text-decoration: none;
 }
 
-body{
+/* Body */
+body {
     background-color: white;
 }
 
-h1{
-    /* color */
-    background-color: rgb(127,171,158);
-    color:black;
-    
-    /* font */
+/* Title Styles */
+h1 {
+    text-align: center;
+    background-color: rgb(127, 171, 158);
+    color: black;
     font-size: 48px;
-    padding: 10px 10px;
-}
-
-p{
-    /* color */
-    background-color: white;
-    color:black;
-
-    /* font */
-    font-size: 18px;
-    padding: 10px 10px;
-}
-
-p[type=question]{
-    /* margins */
-    margin-top: 20px;
-
-    /* color */
-    background-color: rgb(251, 242, 223);
-}
-
-li{
-    padding-left: 15px;
-}
-
-input[type="text"]{
-    /* margins */
-    margin: 0;
-
-    /* color */
-    color: black;
-    background-color: rgb(245,245,239);
-
-    /* dimenions */
-    height: 20px;
     width: 100%;
-
-    /* font */
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    font-size: 18px;
 }
 
-textarea[type="text"]{
-    /* margins */
-    margin: 0;
-
-    /* color */
-    color: black;
-    background-color: rgb(245,245,239);
-
-    /* dimenions */
-    height: 200px;
-    width: 100%;
-
-    /* font */
-    padding: 10px 10px;
-    font-size: 18px;
-}
-
-button[type="header"]{
-    /* margins */
+h1 a button {
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-
-    /* color */
     background-color: rgba(0, 0, 0, 0.1);
     color: rgba(0, 0, 0, 0.5);
-
-    /* font */
-    float: right;
     padding: 10px 30px;
     font-size: 20px;
 }
 
-button[type="submit"]{
-    /* margins */
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-
-    /* color */
-    background-color: rgb(221,186,110);
+/* Paragraph Styles */
+p {
+    background-color: white;
     color: black;
+    font-size: 18px;
+    padding: 10px 10px;
+}
 
-    /* font */
-    padding: 15px 32px;
+/* Criteria Styles */
+p[type="question"] {
+    margin-top: 20px;
+    background-color: rgb(251, 242, 223);
+    color: black;
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+/* Input Styles */
+input, textarea {
+    margin: 0;
+    color: black;
+    background-color: rgb(245, 245, 239);
+    width: 100%;
+    padding: 10px 10px;
     font-size: 18px;
 }
 
-#charCount{
-    /* margins */
+textarea {
+    height: 200px;
+}
+
+input {
+    height: 20px;
+}
+
+/* Character Count Styles */
+#charCount {
     margin-right: 10px;
-    float:right;
+    float: right;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(221, 186, 110);
+    color: black;
+    padding: 15px 32px;
+    font-size: 18px;
 }
