@@ -17,16 +17,18 @@ function doPost(e) {
     const headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
     const nextRow = sheet.getLastRow() + 1;
 
-    const newRow = headers.map(function(header) {
+    const newRow = headers.map(header => {
       return header === 'Date' ? new Date() : e.parameter[header];
     });
 
     sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow]);
 
-    return HtmlService.createHtmlOutput('<html><body><script>window.location.href="https://pj1229.github.io/PDL_Problem_Bank_Website/";</script></body></html>');
-  } catch (e) {
-    return HtmlService.createHtmlOutput(`<html><body><p>Submission failed. Please try again.</p></body></html>`);
+    return ContentService.createTextOutput('Success').setMimeType(ContentService.MimeType.TEXT);
+  } catch (error) {
+    Logger.log(error.toString());
+    return ContentService.createTextOutput('Error: ' + error.message).setMimeType(ContentService.MimeType.TEXT);
   } finally {
     lock.releaseLock();
   }
 }
+
