@@ -94,3 +94,12 @@ button[type="submit"] {
     padding: 15px 32px;
     font-size: 18px;
 }
+
+.container{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 95vw;
+}
