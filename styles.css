@@ -51,7 +51,8 @@ p[type="question"] {
     background-color: rgb(251, 242, 223);
     color: black;
     font-size: 18px;
-    padding: 10px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 ul li {
